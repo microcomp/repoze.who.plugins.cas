@@ -20,7 +20,7 @@ Links :
 
 .. contents::
 
-Makina Corpus sponsorised software
+Credits
 ======================================
 |makinacom|_
 

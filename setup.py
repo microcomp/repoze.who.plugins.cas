@@ -19,7 +19,7 @@ CHANGELOG = open(os.path.join(here, 'CHANGELOG.txt')).read()
 
 setup(name=name,
       version=version,
-      description='CAS plugin for repoze.who',
+      description='CAS plugin for repoze.who by Makina Corpus',
       long_description='\n\n'.join([README, INSTALL, TODO, ISSUES, CHANGELOG]),
       classifiers=[
           'Development Status :: 2 - Pre-Alpha',
