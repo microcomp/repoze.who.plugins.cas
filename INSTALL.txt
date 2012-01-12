@@ -25,6 +25,7 @@ Here is what you can find in it, for the who.ini file::
 
     # IDENTIFIER
     # @param :
+    # - cas_url : URL to your CAS server. Ensure your URL has a trailing slash.
     # - rememberer_name : name of the plugin for remembering (delegate)
     # - path_toskip : regex for url handling their own way the CAS authent
     # - path_logout : regex to see if a logout has to be performed (and trigger forget via challenge)
