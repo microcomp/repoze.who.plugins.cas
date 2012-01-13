@@ -1,6 +1,13 @@
 Changes
 =======
 
+0.1.2 (unreleased)
+++++++++++++++++++
+
+ - Minor additions to example configuration about CAS URL and auth_tkt
+   plugin.
+   [davidjb]
+
 0.1 (2009-07-28)
 ++++++++++++++++
 Initial release.
