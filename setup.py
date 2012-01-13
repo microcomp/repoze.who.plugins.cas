@@ -5,7 +5,7 @@ import sys
 from setuptools import setup, find_packages
 
 
-version = '0.1.2'
+version = '0.1.3dev'
 name='repoze.who.plugins.cas'
 
 here = os.path.abspath(os.path.dirname(__file__))
