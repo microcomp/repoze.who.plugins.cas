@@ -90,7 +90,7 @@ class ChallengeTest(unittest.TestCase):
         app_headers = forget_headers = []
         httpfound = self.classic_ccp.challenge(env,status,app_headers,forget_headers)
 
-        self.assertEqual(httpfound.location().startswith(self.cas_url),True)
+        self.assertEqual(httpfound.location.startswith(self.cas_url),True)
         #for h1,h2 in httpfound.headers
         #    self.assertEqual(httpfound.location.startswith(self.cas_url),True)
 
@@ -103,7 +103,7 @@ class ChallengeTest(unittest.TestCase):
         # paste.httpexceptions
         httpfound = self.classic_ccp.challenge(env,status,app_headers,forget_headers)
         
-        self.assertEqual(httpfound.location(), 
+        self.assertEqual(httpfound.location,
                          self.cas_url + 'logout?service=' + urllib.quote(myurl))
 
 
