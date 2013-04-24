@@ -1,4 +1,7 @@
 *.db
+.minitagecfg/
+b.sh
+minitage.buildout.cfg
 *.mo
 *.swp
 *.egg-info
@@ -28,3 +31,6 @@ var
 *.pyo
 *.tmp*
 .coverage
+.cache/
+minitage.test.cfg
+

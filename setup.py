@@ -11,10 +11,10 @@ name='repoze.who.plugins.cas'
 here = os.path.abspath(os.path.dirname(__file__))
 
 README = open(os.path.join(here, 'README.rst')).read()
-INSTALL = open(os.path.join(here, 'INSTALL.txt')).read()
-TODO = open(os.path.join(here, 'TODO.txt')).read()
-ISSUES = open(os.path.join(here, 'ISSUES.txt')).read()
-CHANGELOG = open(os.path.join(here, 'CHANGELOG.txt')).read()
+INSTALL = open(os.path.join(here, 'INSTALL.rst')).read()
+TODO = open(os.path.join(here, 'TODO.rst')).read()
+ISSUES = open(os.path.join(here, 'ISSUES.rst')).read()
+CHANGELOG = open(os.path.join(here, 'CHANGELOG.rst')).read()
 
 
 setup(name=name,
@@ -44,8 +44,9 @@ setup(name=name,
       packages = find_packages('src'),
       package_dir = {'': 'src'},
       install_requires=[
-        'setuptools',
-        'repoze.who>=1.0',
+          'setuptools',
+          'Paste',
+          'repoze.who>=1.0',
       ],
       extras_require={'test': ['ipython',
                                'zope.testing',

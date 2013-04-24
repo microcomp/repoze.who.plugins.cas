@@ -4,6 +4,7 @@ Changes
 0.2 (unreleased)
 ++++++++++++++++
 
+ - Review davidjb changes, cleanify the buildout infra, travis setup [kiorky]
  - Support obtaining user attributes (metadata) via CAS 2.0 service 
    validation (``/serviceValidation``) and parsing the XML response.
    User attributes will be placed into the repoze.who identity

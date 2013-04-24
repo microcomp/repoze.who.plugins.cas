@@ -1,9 +1,15 @@
 Introduction
 ============
 
+.. contents::
+
 ``repoze.who.plugins.cas`` is a plugin for the `repoze.who framework
-<http://docs.repoze.org/who/>`_ that enables Single Sign-On (SSO) 
-for applications via a Central Authentication Service (CAS) server. 
+<http://docs.repoze.org/who/>`_ that enables Single Sign-On (SSO)
+for applications via a Central Authentication Service (CAS) server.
+
+.. image:: https://secure.travis-ci.org/kiorky/repoze.who.plugins.cas.png
+    :target: http://travis-ci.org/kiorky/repoze.who.plugins.cas
+
 
 The plugin follows the protocols described
 in the `official documentation <http://www.jasig.org/cas/protocol>`_ for
@@ -63,6 +69,5 @@ Credits
 Documentation
 =============
 
-.. contents::
 
 
