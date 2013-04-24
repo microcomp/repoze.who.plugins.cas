@@ -1,7 +1,7 @@
 Changes
 =======
 
-0.2 (unreleased)
+0.2.0 (2013-04-24)
 ++++++++++++++++
 
  - Review davidjb changes, cleanify the buildout infra, travis setup [kiorky]
