@@ -1,7 +1,7 @@
 Changes
 =======
 
-0.2.1 (unreleased)
+0.2.1 (2013-04-24)
 ------------------
 
 - Nothing changed yet.
