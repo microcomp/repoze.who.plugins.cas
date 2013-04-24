@@ -17,7 +17,7 @@ login, ticket validation, and logout. The plugin has been tested against
 instances of CAS 3.0+ servers.
 
 Compatibility Note
-++++++++++++++++++
+------------------
 
 Whilst the plugin supports both CAS 1.0- and CAS 2.0-style service ticket
 validation, the plugin has currently only been tested against instances of
@@ -25,7 +25,7 @@ CAS 3.0+ servers.  Backwards compatibility is unknown at the point and
 assistance testing this plugin is welcomed.
 
 Potential Applications
-++++++++++++++++++++++
+----------------------
 
 Applications which can be used :
 
@@ -39,12 +39,12 @@ Applications which can be used :
   PHP with Python),
 
 Links
-+++++
+----+
 
 - `Official link for CAS <http://www.jasig.org/cas>`_
 
 Development
-+++++++++++
+-----------
 
 To run the test suite, clone this project from source code hosting and
 run the following::
@@ -55,7 +55,7 @@ run the following::
     ./bin/test
 
 Credits
-+++++++
+-------
 
 |makinacom|_
 

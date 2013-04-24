@@ -2,7 +2,7 @@ Installing
 ==========
 
 Requirement
-++++++++++++
+------------
 
 You must have a CAS server working and you will need to know the URL to your
 CAS server.  Typically, this will be the part of the URL before your
@@ -14,7 +14,7 @@ All URLs for CAS login, validation, and logout will be built using this
 address.
 
 CAS
-+++
+---
 
 You must ensure that logout is enabled on your CAS server.
 Typically, this involves adding::
@@ -25,7 +25,7 @@ into the ``LogoutController`` bean in your ``cas-servlet.xml`` file.
 Ask your system administrator if you're unsure about the above.
 
 Attribute release
-+++++++++++++++++
+-----------------
 
 If your CAS server supports it, this plugin can parse and capture 
 user metadata attributes being released during the CAS ticket validation
@@ -44,7 +44,7 @@ As mentioned, you can find the retrieved attributes within the ``repoze.who``
 identity within the specific request that triggers the CAS authentication.
 
 Your apps
-+++++++++
+---------
 
 Nothing is required within your apps, just set them up and configure 
 ``repoze.who`` accordingly.  You may like to follow the example 
