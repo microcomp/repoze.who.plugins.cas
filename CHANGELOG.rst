@@ -1,7 +1,7 @@
 Changes
 =======
 
-0.2.2 (unreleased)
+0.2.2 (2013-04-25)
 ------------------
 
 - Documentation markup fixes
