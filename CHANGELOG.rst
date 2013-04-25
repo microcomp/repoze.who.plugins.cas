@@ -4,14 +4,7 @@ Changes
 0.2.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
-
-0.2.1 (2013-04-24)
-------------------
-
-- Nothing changed yet.
-
+- Documentation markup fixes
 
 0.2.0 (2013-04-24)
 ------------------------------
