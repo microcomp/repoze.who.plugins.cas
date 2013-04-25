@@ -39,7 +39,7 @@ Applications which can be used :
   PHP with Python),
 
 Links
-----+
+-----
 
 - `Official link for CAS <http://www.jasig.org/cas>`_
 
