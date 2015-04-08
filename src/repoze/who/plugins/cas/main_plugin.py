@@ -186,7 +186,10 @@ class CASChallengePlugin(FormPluginBase):
                         for attribute in attributes.getchildren():
                             name = attribute.tag.replace(
                                 CAS_NAMESPACE_PREFIX, '')
-                            processed_attributes[name] = attribute.text
+                            if processed_attributes.get(name, None):
+                                processed_attributes[name].append(attribute.text)
+                            else:
+                                processed_attributes[name] =[attribute.text,]
                         result[self.attributes_name] = processed_attributes
 
                 return result

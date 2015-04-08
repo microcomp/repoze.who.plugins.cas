@@ -33,4 +33,6 @@ var
 .coverage
 .cache/
 minitage.test.cfg
+.pydevproject
+.project
 
