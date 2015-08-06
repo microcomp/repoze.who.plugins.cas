@@ -191,9 +191,8 @@ class CASChallengePlugin(FormPluginBase):
                             else:
                                 processed_attributes[name] =[attribute.text,]
                         result[self.attributes_name] = processed_attributes
-
+                result['ticket'] = ticket
                 return result
-
         else:
             #CAS 1.0 returns 2 lines - see section 2.4.2 of CAS protocol
             validation = response.splitlines()
