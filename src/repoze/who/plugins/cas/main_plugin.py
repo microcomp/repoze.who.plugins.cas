@@ -49,12 +49,14 @@ class CASChallengePlugin(FormPluginBase):
 
     def __init__(self,
                  cas_url,
+                 cas_internal_url,
                  path_logout,
                  path_toskip,
                  rememberer_name,
                  cas_version=1.0,
                  attributes_name='attributes'):
         self.cas_url = cas_url
+        self.cas_internal_url = cas_internal_url
         self.cas_version = cas_version
         self.path_logout = path_logout
         self.path_toskip = path_toskip
@@ -160,7 +162,7 @@ class CASChallengePlugin(FormPluginBase):
             base_url = '{cas_url}validate?service={service_url}&ticket={ticket}'
 
         service_url = urllib.quote(self._serviceURL(environ, urllib.urlencode(query)))
-        validate_url = base_url.format(cas_url=self.cas_url,
+        validate_url = base_url.format(cas_url= self.cas_internal_url or self.cas_url,
                                        service_url=service_url[:service_url.index('%3F')],
                                        ticket=urllib.quote(ticket))
 
@@ -230,6 +232,7 @@ def compile_paths_regex(paths):
 
 
 def make_plugin(cas_url=None,
+                cas_internal_url=None,
                 cas_version=1.0,
                 rememberer_name=None,
                 attributes_name=None,
@@ -312,6 +315,7 @@ def make_plugin(cas_url=None,
 
     plugin = CASChallengePlugin(
         cas_url=cas_url,
+        cas_internal_url=cas_internal_url,
         cas_version=float(cas_version),
         rememberer_name=rememberer_name,
         attributes_name=attributes_name,
